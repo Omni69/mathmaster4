@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Jogo de Adivinhação</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="jogo1.css">
+</head>
+<body>
+   <div class="container">
+       <a id="back_btn" href="jogar.html">
+           <img src="voltar.png" alt="Voltar">
+       </a>
+       <h3>Estou pensando em um número entre 1-100.</h3>
+       <h3>Você consegue adivinhar?</h3>
+
+       <input type="text" placeholder="Número" id="guess"><br>
+       <button onclick="play()" id="my_btn">ADIVINHAR</button>
+
+       <p id="message1">Número de Palpites: 0</p>
+       <p id="message2">Números Palpitados: Nenhum</p>
+       <p id="message3"></p>
+   </div>
+   <!--Script-->
+   <script src="jogo1.js"></script>
+</body>
+</html>

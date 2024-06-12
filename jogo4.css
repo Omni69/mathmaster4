@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4880b8; /* Alterando a cor de fundo para uma tonalidade mais suave */
+}
+
+.title {
+  color: #1e90ff; /* Usando um tom de azul bonito para o título */
+  text-align: center;
+  font-size: 36px; /* Ajustando o tamanho do título */
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+main {
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.sites {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.sites h4 {
+  color: #555; /* Alterando a cor do link para um cinza mais suave */
+  margin: 0;
+}
+
+.sites h4 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sites h4 a img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+}
+
+.spnQtd {
+  text-align: end;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #1e90ff; /* Usando o mesmo tom de azul para os botões */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px; /* Ajustando o tamanho da fonte dos botões */
+}
+
+button:hover {
+  animation-name: bot;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0, 0, 500px, 25px, rgb(195, 3, 253);
+}
+
+@keyframes bot {
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.finish {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.finish button {
+  text-align: center;
+}
